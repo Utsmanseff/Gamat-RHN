@@ -19,18 +19,11 @@ export default function ScrollTopButton() {
   }, []);
 
   const scrollToTop = () => {
-    const currentPosition = window.pageYOffset;
-    
-    const scrollStep = -currentPosition / 35; // Makin kecil angka, makin cepat
-    
-    const scrollAnimation = () => {
-      if (window.pageYOffset <= 0) return;
-      
-      window.scrollBy(0, scrollStep);
-      setTimeout(scrollAnimation, 15);  
-    };
-    
-    scrollAnimation();
+    // Menggunakan scrollTo dengan behavior: 'smooth' untuk animasi yang lebih efisien
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
 
   return (
