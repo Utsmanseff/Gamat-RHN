@@ -34,7 +34,7 @@ export default function Navbar() {
               <Link href="#about" className="text-gray-800 hover:text-green-700 px-3 py-2 transition-colors font-medium">
                 Tentang
               </Link>
-              <Link href="#manfaat" className="text-gray-800 hover:text-green-700 px-3 py-2 transition-colors font-medium">
+              <Link href="#deskripsi" className="text-gray-800 hover:text-green-700 px-3 py-2 transition-colors font-medium">
                 Manfaat
               </Link>
               <Link href="#bahan" className="text-gray-800 hover:text-green-700 px-3 py-2 transition-colors font-medium">
@@ -75,6 +75,9 @@ export default function Navbar() {
           </Link>
           <Link href="#deskripsi" className="block text-gray-800 hover:text-green-700 px-3 py-2 transition-colors font-medium" onClick={() => setMobileMenuOpen(false)}>
             Manfaat
+          </Link>
+          <Link href="#bahan" className="block text-gray-800 hover:text-green-700 px-3 py-2 transition-colors font-medium" onClick={() => setMobileMenuOpen(false)}>
+            Bahan Aktif
           </Link>
           <Link href="#produk" className="block text-gray-800 hover:text-green-700 px-3 py-2 transition-colors font-medium" onClick={() => setMobileMenuOpen(false)}>
             Produk
