@@ -148,7 +148,7 @@ const BahanHerbal: React.FC = () => {
     return borderColor.replace('border', 'bg');
   };
 
-  const renderBahanElement = (bahan: BahanObat, index: number) => {
+  const renderBahanElement = (bahan: BahanObat, _: number) => {
     const Icon = bahan.ikon;
     return (
       <motion.div

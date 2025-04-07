@@ -118,7 +118,7 @@ export default function Desc() {
                <div className="mt-6 pt-6 border-t border-gray-100">
                  <div className="bg-amber-50 p-4 rounded-lg">
                    <p className="text-sm text-amber-800 italic">
-                     "Untuk hasil optimal, gunakan secara rutin dan pastikan area luka tetap bersih"
+                   &quot;Untuk hasil optimal, gunakan secara rutin dan pastikan area luka tetap bersih&quot;
                    </p>
                  </div>
                </div>

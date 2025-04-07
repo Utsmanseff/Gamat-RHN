@@ -1,7 +1,7 @@
 'use client';
 import { useRef, useEffect, useState } from 'react';
 import Image from 'next/image';
-import { FaWhatsapp, FaShoppingCart, FaLeaf } from 'react-icons/fa';
+import { FaWhatsapp, FaLeaf } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 export default function Product() {
@@ -30,7 +30,7 @@ export default function Product() {
    }
  }, []);
 
- const handleWhatsAppClick = (size: string) => {
+ const handleWhatsAppClick = (_: string) => {
    const message = `Halo, saya tertarik dengan produk Gamat RHN. Bisa tolong informasi lebih lanjut?`;
    const url = `https://wa.me/6285796966254?text=${encodeURIComponent(message)}`;
    window.open(url, '_blank');
